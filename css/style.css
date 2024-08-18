@@ -1,0 +1,131 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the navbar section */
+#s1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Styling the logo image */
+#s1 img {
+    width: 150px;
+    height: auto;
+}
+
+/* Styling the navbar list */
+#navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Styling the list items */
+#navbar li {
+    position: relative;
+}
+
+/* Styling the links */
+#navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+#navbar li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Styling for the cart icon */
+#navbar li a i {
+    font-size: 20px;
+}
+
+/* Responsive navbar for smaller screens */
+@media (max-width: 768px) {
+    #s1 {
+        flex-direction: column;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #navbar li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#merged {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+#section1, #section2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Box Styling */
+#section1 div, #section2 div {
+    width: 48%; /* Each product box takes 48% width */
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Product ID Styling */
+#p1, #p2, #p3, #p4 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #section1 div, #section2 div {
+        width: 100%; /* Stack product boxes on smaller screens */
+    }
+}
+
+
+
+
